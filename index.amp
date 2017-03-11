@@ -1,0 +1,221 @@
+<!doctype html>
+<html ⚡>
+<head>
+	<meta charset="utf-8">
+	<title>AMP Basic Template</title>
+	<link rel="canonical" href="#">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<style amp-custom>
+	    .menu-container {
+		    border-top: 5px solid #444;
+		    background-color: #fff;
+		    min-height: 100px;
+		    position: fixed;
+		    top: 0;
+		    transition: top 0.2s ease-in-out;
+		    width: 100%;
+		    z-index: 100;
+		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		    text-align: center;
+	    }
+		#main-menu > ul > li > a:hover, #main-menu > ul > li:hover > a {
+			color: #3d3d3d;
+		}
+		#main-menu > ul > li > a {
+			font-size: 14px;
+			padding: 0px 20px;
+			color: #bababa;
+			text-transform: uppercase;
+			-webkit-transition: all 0.2s ease-out;
+			-moz-transition: all 0.2s ease-out;
+			-o-transition: all 0.2s ease-out;
+			-ms-transition: all 0.2s ease-out;
+			transition: all 0.2s ease-out;
+		}
+		div.logo {
+			width: 185px;
+			display: inline-block;
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+		#main-menu {
+			text-align: center;
+		}
+		#main-menu ul {
+			position: relative;
+			padding: 0;
+		}
+		#main-menu li {
+			list-style-type: none;
+			display: inline-block;
+		}
+		#main-menu li a {
+			text-decoration: none;
+			font-family: Helvetica, Arial, sans-serif;
+		}
+		#container {
+			background: #fafafa;
+			text-align: center;
+			padding: 25px 165px;
+			max-width: 1170px;
+			margin: 110px auto 50px auto;
+			box-sizing: border-box;
+		}
+		#container p {
+			color: #a1a1a1;
+		}
+		h1 {
+			font-weight: 300;
+			color: #161616;
+			font-size: 30px;
+			line-height: 35px;
+			margin-bottom: 15px;
+		}
+		#container.roboto, #main-menu.roboto, .menu-container.class li a {
+			font-family: Helvetica, Arial, sans-serif;
+		}
+		h3.section-title {
+			font-weight: 300;
+			color: #161616;
+			font-size: 26px;
+			line-height: 30px;
+		}
+		.mbottom5 {
+			margin-bottom: 5px;
+		}
+		@media screen and (max-width: 480px) {
+			#container {
+				margin-top: 130px;
+				padding: 25px;
+			}
+			h1 {
+				font-size: 23px;
+			}
+		}
+		footer {
+			border-top: solid 3px #444;
+		}
+		.footer, .footer ul, .footer ol {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		li.footer {
+			display: inline;
+		}
+		li.footer a {
+			margin-right: 6px;
+			margin-left: 6px;
+		}
+		div.copyright {
+			text-align: center;
+		}
+		.copyright {
+			font-size: 11px;
+			color: #575656;
+			font-size: 0;
+			margin-bottom: 0;
+		}
+		li.footer a {
+			margin-left: 6px;
+		}
+		a {
+			color: #3d3d3d;
+			font-weight: 500;
+			text-decoration: none;
+		}
+		.footer p {
+			font-weight: lighter;
+		}
+		.footer {
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 15px;
+			background: #E6E6E6;
+			padding: 25px 0;
+		}
+		.col-left {
+			width: auto;
+			display: inline-block;
+			vertical-align: top:
+		}
+		.col-right {
+			max-width: 80px;
+			display: inline-block;;
+			vertical-align: top;
+			float: right;
+		}
+		.bottom {
+			text-align: left;
+			overflow: overlay;
+			margin-bottom: 20px;
+			padding: 0 10%;
+			overflow: hidden;
+		}
+		.top {
+			margin-bottom: 20px;
+			text-align: left;
+			padding: 0 10%;
+		}
+		.content{
+			margin-top: 150px;
+			padding: 0 10%;
+		}
+	</style>
+	<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+</head>
+<body>
+	<div class="menu-container">
+		<div class="logo-container">
+			<a href="#">
+				<div class="logo">
+					<amp-img src="img/logo.png"
+						alt="Logo"
+						width="180"
+						height="41"
+						layout="responsive"
+						title="Click to return to Homepage">
+					</amp-img>
+				</div>
+			</a>
+		</div>
+		<div id="main-menu">
+			<ul>
+		    	<li><a href="#">Link 1</a></li>
+		    	<li><a href="#">Link 2</a></li>
+		    	<li><a href="#">Link 3</a></li>
+		        <li><a href="#">Link 4</a></li>
+		    </ul>
+		</div>
+	</div>
+	<div class="content">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quam eros, maximus vitae pulvinar nec, convallis a augue. Aenean ut magna lobortis, tincidunt lectus eu, gravida orci. Phasellus et sem risus. Pellentesque a vulputate lectus. In molestie eros et nibh varius hendrerit. Phasellus eu ligula elementum, pellentesque quam volutpat, convallis ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla et libero aliquet, consectetur est et, mollis dui. Maecenas mattis consectetur nunc, volutpat pretium est venenatis suscipit.</p>
+		<p>Pellentesque ut augue malesuada urna condimentum ornare non ut nunc. Nullam posuere sagittis rhoncus. In laoreet auctor arcu, at posuere sem mattis ac. Sed tellus sem, tincidunt et bibendum non, convallis non nisi. Vivamus posuere metus in ullamcorper malesuada. Praesent bibendum tempus enim, sit amet eleifend est commodo et. Maecenas sit amet pulvinar lacus, a pulvinar lacus.</p>
+		<p>Donec congue eget erat vel vulputate. Nullam quis finibus diam. Cras et arcu eget mauris ullamcorper ultrices porttitor et nunc. Ut pretium neque et finibus euismod. Fusce aliquet, neque non ultricies egestas, leo est vehicula orci, quis fermentum odio leo id mauris. Mauris at mi eu diam convallis eleifend in molestie metus. Phasellus gravida faucibus felis, id scelerisque nulla fermentum nec.</p>
+		<p>Aenean sit amet dolor sit amet elit sodales faucibus. Duis risus magna, consectetur non feugiat sit amet, aliquet sed elit. Pellentesque sed arcu neque. Vestibulum luctus augue a condimentum imperdiet. Maecenas sit amet ligula condimentum, auctor risus in, dignissim orci. Pellentesque nunc nisi, porta at augue sit amet, suscipit laoreet nisi. Maecenas orci libero, suscipit auctor mi eu, lobortis ultricies mauris. Pellentesque et porttitor leo. Phasellus molestie est metus, id scelerisque diam eleifend vitae. Ut ornare odio id dapibus auctor. Aliquam at bibendum lorem. Nullam molestie purus ut sagittis sodales. Aliquam ultrices, nunc sed fermentum scelerisque, lorem augue feugiat lacus, in aliquam lacus ligula eget arcu. In ut dignissim arcu, id pretium risus. Mauris sollicitudin posuere nisi, id consectetur est mattis id.</p>
+		<p>In velit mauris, tristique feugiat tellus ac, vehicula sodales lectus. Duis aliquam, nisl ac sagittis aliquam, metus ante fermentum justo, sed euismod sem turpis nec sem. Donec nec pretium diam, et vehicula enim. Maecenas sit amet feugiat leo. Nunc dignissim urna nibh, eget laoreet urna convallis ut. Mauris commodo purus lacus, a eleifend justo congue eget. In hac habitasse platea dictumst. Suspendisse id venenatis mauris, a lacinia velit. Praesent faucibus nunc non sapien commodo, sed placerat turpis faucibus. Quisque consequat scelerisque porta. Duis finibus, purus in lacinia rhoncus, ligula sapien sodales tellus, semper tincidunt sapien eros at justo. Phasellus aliquam sollicitudin tincidunt. Ut vitae tortor in nisi efficitur egestas. Nullam a fringilla justo. In scelerisque et nisi eu dictum.</p>	
+	</div>
+	<footer class="footer">
+    	<div class="top">
+        	<div class="col-sm-3 mbottom30">
+            	<p class="mtop30">Proin a lectus at ex auctor tincidunt. Vivamus ut risus lectus. Nunc sit amet rutrum nibh. Suspendisse accumsan tortor eleifend nisi ullamcorper, at hendrerit turpis ornare. Integer quis laoreet nisi. Maecenas ut lorem tristique, vestibulum leo ac, fringilla nisl. Integer at dapibus eros, sit amet rhoncus ipsum. Vivamus facilisis eu mauris et faucibus. Nulla dapibus viverra venenatis.</p>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="col-left">
+				<ul class="reset-list">
+					<li class="footer"><a href="#">Link 1</a> -</li>
+					<li class="footer"><a href="#">Link 2</a> -</li>
+	                <li class="footer"><a href="#">Link 3</a> -</li>
+	                <li class="footer"><a href="#">Link 4</a></li>
+				</ul>
+			</div>
+			<div class="col-right">
+				<p class="copyright">
+					© 2017 <strong>mysite.com</strong>. All Rights Reserved
+				</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
